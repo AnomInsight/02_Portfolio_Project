@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+.github/copilot-profiles-general-state.json
+
+# Python and uv
+.venv/
+__pycache__/
+*.pyc
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data and artifacts
+data/
+models/
+reports/
+my_notes/

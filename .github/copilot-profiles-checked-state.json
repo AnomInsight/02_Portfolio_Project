@@ -1,0 +1,15 @@
+{
+  "pages": [
+    {
+      "profile": "tocen_efficien_python_agent",
+      "checkedFiles": [
+        "token-efficient-datascientist.agent.md"
+      ],
+      "instructionFiles": [
+        "token-efficient-datascientist.agent.md",
+        "token_instructions.md"
+      ]
+    }
+  ],
+  "currentPage": 0
+}
