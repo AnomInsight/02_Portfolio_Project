@@ -12,11 +12,13 @@ Primary goal: detect elevated short-term machine failure risk (24-72h) to suppor
 
 ## Current Status
 
-- Business understanding complete: reports/business_understanding.md
-- Data audit complete: reports/data_audit_report.md and reports/data_audit_report.pdf
+- Business understanding complete
+- Data audit complete
 - EDA complete: src/02_EDA.py
 - Data preparation complete: src/03_data_preparation.py
 - Modeling and holdout evaluation complete: src/04_Modeling.py
+
+Note: generated reports, trained models, and data artifacts are gitignored and not part of this public repository. Only source code is tracked.
 
 Data prep highlights:
 - leakage-safe exclusions: TWF, HDF, PWF, OSF, RNF, UDI, Product ID
@@ -73,17 +75,10 @@ Pilot exit criteria (4-6 weeks):
 .
 ├── 0_utils/                  # io_utils, split_utils, plotting, experiment helpers
 ├── configs/
-├── data/
-│   ├── raw/                  # ai4i2020.csv
-│   └── processed/            # train/val/test parquet + metadata.json
-├── models/                   # trained models + candidate_a_* artifacts
+├── data/                     # gitignored: raw/processed data generated locally
+├── models/                   # gitignored: trained model artifacts generated locally
 ├── notebooks/
-├── reports/
-│   ├── CRISP_DM_PLAN.md
-│   ├── business_understanding.md
-│   ├── data_audit_report.md
-│   ├── data_audit_report.pdf
-│   └── figures/
+├── reports/                  # gitignored: generated reports and figures
 ├── src/
 │   ├── 01_data_load.py
 │   ├── 02_EDA.py
@@ -113,12 +108,4 @@ uv run python src/04_Modeling.py
 
 ## Key Outputs
 
-- data/processed/train.parquet
-- data/processed/val.parquet
-- data/processed/test.parquet
-- data/processed/metadata.json
-- models/candidate_a_model.pkl
-- models/candidate_a_spec.json
-- models/candidate_a_holdout_report.json
-
-Metadata includes target, selected model features, excluded columns, split sizes, and class ratios.
+Running the pipeline locally generates processed datasets, trained model artifacts, and metadata (target, selected features, excluded columns, split sizes, class ratios). These outputs are gitignored and not included in this repository.
