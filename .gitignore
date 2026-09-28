@@ -3,6 +3,7 @@ data/
 models/
 reports/
 my_notes/
+0_utils/
 
 # Python environments and generated files
 .venv/
