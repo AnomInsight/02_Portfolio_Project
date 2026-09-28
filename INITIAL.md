@@ -8,7 +8,6 @@ Run once from project root:
 
 ```powershell
 @(
-	"0_utils",
 	"configs",
 	"data/raw",
 	"data/interim",

@@ -75,7 +75,6 @@ Proposed exit criteria for a hypothetical pilot (4-6 weeks):
 
 ```text
 .
-├── 0_utils/                  # io_utils, split_utils, plotting, experiment helpers
 ├── data/                     # local raw and processed datasets; ignored
 ├── models/                   # local trained artifacts; ignored
 ├── reports/                  # local generated reports and figures; ignored
